@@ -1,6 +1,9 @@
 <template>
     <div id="nav">
       <NuxtLink to="/">Home</NuxtLink> |
+      <NuxtLink :to="{ name: 'About' }">About</NuxtLink> |
+      <NuxtLink :to="{ name: 'Discography' }">Discography</NuxtLink> |
+      <NuxtLink :to="{ name: 'Events' }">Events</NuxtLink>
     </div>
   </template>
   

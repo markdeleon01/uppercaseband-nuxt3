@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <h2>Welcome to the Official Website!</h2>
+    <p class="band-logo">
+      <img src="/UPPERCASE_logo.png">
+    </p>
     <p class="page-content">
       UPPERCASE is a Filipino-Canadian indie pop rock band from Toronto, Canada
       pursuing Original Pilipino Music (OPM)
