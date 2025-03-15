@@ -24,9 +24,5 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "^9.22.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-vue": "^10.0.0",
-    "jiti": "^2.4.2"
   }
 }
