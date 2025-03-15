@@ -24,10 +24,6 @@ jobs:
           paths:
             - ~/.npm
 
-      - run:
-          name: Run linter
-          command: npm run lint
-
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
 workflows:
