@@ -1,4 +1,8 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
+  "compilerOptions": {
+    "module": "ES2015",
+    "noImplicitAny": false
+  },
   "extends": "./.nuxt/tsconfig.json"
 }
