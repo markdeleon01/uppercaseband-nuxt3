@@ -34,7 +34,7 @@ function getReleases(next: NavigationGuardNext) {
 }
 
 export default {
-  name: 'discography-view',
+  name: 'Discography',
   beforeRouteEnter(routeTo, routeFrom, next) {
     getReleases(next)
   },
