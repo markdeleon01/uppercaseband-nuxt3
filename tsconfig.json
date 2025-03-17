@@ -2,6 +2,8 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "compilerOptions": {
     "module": "ES2015",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false
   },
   "extends": "./.nuxt/tsconfig.json"
