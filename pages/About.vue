@@ -1,6 +1,9 @@
 <template>
 	<div class="about">
 		<h2>Band Members</h2>
+		<p class="member-item" v-for="member in membersStore.members" :key="member['name']">
+			<span>{{ member['name'] }} - {{ member['role'] }}</span>
+		</p>
 		<p class="band-pic">
 			<img src="/uppercase2019-bandPic.png" />
 		</p>
@@ -41,6 +44,59 @@
 		</div>
 	</div>
 </template>
+
+<script lang="ts">
+/* c8 ignore start */
+import { useMembersStore } from '@/stores/Members'
+import { mapStores } from 'pinia' //get access to the whole store with mapStores()
+import type { NavigationGuardNext } from 'vue-router'
+
+function getMembers(next: NavigationGuardNext) {
+  const store = useMembersStore() // Option Store:  Members
+
+  //Once the store is instantiated, you can access any property defined in state, getters, and actions directly on the store.
+  store
+    .fetchMembers() // call the store action
+    .then(() => {
+      next()
+    })
+    .catch((error) => {
+      if (error.response && error.response.status == 404) {
+        // redirect to 404 page with name of resource missing
+        next({ name: '404', params: { resource: 'page' } })
+      } else {
+        next({ name: 'NetworkIssue' })
+      }
+    })
+}
+
+export default {
+  name: 'about-view',
+  beforeRouteEnter(routeTo, routeFrom, next) {
+    getMembers(next)
+  },
+  beforeRouteUpdate(routeTo, routeFrom, next) {
+    getMembers(next)
+  },
+  computed: {
+    // note we are not passing an array, just one store after the other
+    ...mapStores(useMembersStore)
+    // use Pinia with map helpers: return the whole store instance to use it in the template;
+    // each store will be accessible as its id + 'Store'.
+
+    // By default, Pinia will add the "Store" suffix to the id of each store. You can customize this behavior by calling the setMapStoreSuffix().
+
+    // completely remove the suffix: this.user, this.cart
+    // setMapStoreSuffix('')
+
+    // this.user_store, this.cart_store
+    // setMapStoreSuffix('_store')
+
+    // Note that store is an object wrapped with reactive, meaning there is no need to write .value after getters but, like props in setup, we cannot destructure it.
+  }
+}
+/* c8 ignore stop */
+</script>
 
 <style scoped>
 h2 {
