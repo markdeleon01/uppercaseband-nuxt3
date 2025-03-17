@@ -11,10 +11,11 @@
     "install:xvfb": "sudo apt-get update && sudo apt-get install libgtk2.0-0 && sudo apt-get install libgtk-3-0 && sudo apt-get install libgbm-dev && sudo apt-get install libnotify-dev && sudo apt-get install libgconf-2-4 && sudo apt-get install libnss3 && sudo apt-get install libxss1 && sudo apt-get install libasound2 && sudo apt-get install libxtst6 && sudo apt-get install xauth && sudo apt-get install xvfb",
     "make-badges": "npx istanbul-badges-readme",
     "make-badges:ci": "npm run make-badges -- --ci",
-    "coverage": "jest --coverage",
+    "test": "vitest --run --passWithNoTests",
+    "test:unit": "vitest",
+    "coverage": "vitest run --coverage",
     "test:e2e": "start-server-and-test 'nuxt start' :3000 'cypress run --e2e --record --key 0b12a310-497e-4b6d-8343-e1db3a2352cf'",
-    "test:e2e:dev": "start-server-and-test 'nuxt start' :3000 'cypress open --e2e'",
-    "test": "jest"
+    "test:e2e:dev": "start-server-and-test 'nuxt start' :3000 'cypress open --e2e'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -25,5 +26,12 @@
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.17.2",
+    "@pinia/testing": "^1.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^17.4.4",
+    "vitest": "^3.0.9"
   }
 }
