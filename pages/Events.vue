@@ -34,7 +34,7 @@ function getEvents(next: NavigationGuardNext) {
 }
 
 export default {
-  name: 'events-view',
+  name: 'Events',
   beforeRouteEnter(routeTo, routeFrom, next) {
     getEvents(next)
   },

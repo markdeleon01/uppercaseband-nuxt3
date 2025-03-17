@@ -71,7 +71,7 @@ function getMembers(next: NavigationGuardNext) {
 }
 
 export default {
-  name: 'about-view',
+  name: 'About',
   beforeRouteEnter(routeTo, routeFrom, next) {
     getMembers(next)
   },
