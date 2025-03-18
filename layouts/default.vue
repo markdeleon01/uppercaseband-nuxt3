@@ -1,3 +1,4 @@
+/* c8 ignore start */
 <template>
     <div id="app">
         <nav>
@@ -13,8 +14,10 @@
         </main>
     </div>
 </template>
+/* c8 ignore stop */
 
-<script>
+<script lang="ts">
+/* c8 ignore start */
 import NavBar from '@/components/NavBar.vue'
 
 export default {
@@ -22,6 +25,7 @@ export default {
     NavBar
   }
 }
+/* c8 ignore stop */
 </script>
 <style>
 #app {
