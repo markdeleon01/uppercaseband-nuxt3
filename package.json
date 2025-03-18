@@ -14,7 +14,7 @@
     "test": "vitest --run --passWithNoTests",
     "test:unit": "vitest",
     "coverage": "vitest run --coverage",
-    "test:e2e": "npx nuxi build && start-server-and-test 'nuxt start' :3000 'cypress run --e2e'",
+    "test:e2e": "npx nuxi build && start-server-and-test 'nuxt start' :3000 'cypress run --e2e --record --key 36c8cc55-fdd7-4b22-8e54-42efe61430a8'",
     "test:e2e:dev": "npx nuxi build && start-server-and-test 'nuxt start' :3000 'cypress open --e2e'"
   },
   "dependencies": {
