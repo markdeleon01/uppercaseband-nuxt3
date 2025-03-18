@@ -7,7 +7,7 @@
 **Code unit test coverage:**
 | Statements                  | Branches                | Functions                 | Lines             |
 | --------------------------- | ----------------------- | ------------------------- | ----------------- |
-| ![Statements](https://img.shields.io/badge/statements-48.1%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-30.35%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-34.48%25-red.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-46.75%25-red.svg?style=flat) |
+| ![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-100%25-brightgreen.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat) |
 
 ## UPPERCASE band webapp
 

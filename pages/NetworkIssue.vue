@@ -6,4 +6,4 @@
         Back to the home page
       </NuxtLink>
     </div>
-  </template>  
+</template>

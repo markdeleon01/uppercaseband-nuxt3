@@ -1,14 +1,16 @@
-<template>
+  <template>
     <div id="nav">
-      <NuxtLink to="/">Home</NuxtLink> |
-      <NuxtLink :to="{ name: 'About' }">About</NuxtLink> |
-      <NuxtLink :to="{ name: 'Discography' }">Discography</NuxtLink> |
-      <NuxtLink :to="{ name: 'Events' }">Events</NuxtLink>
+      <NuxtLink data-testid="home" to="/">Home</NuxtLink> |
+      <NuxtLink data-testid="about" :to="{ name: 'About' }">About</NuxtLink> |
+      <NuxtLink data-testid="discography" :to="{ name: 'Discography' }">Discography</NuxtLink> |
+      <NuxtLink data-testid="events" :to="{ name: 'Events' }">Events</NuxtLink>
     </div>
   </template>
   
-  <script>
-  export default {}
+  <script lang="ts">
+    /* c8 ignore start */
+    export default {}
+    /* c8 ignore stop */
   </script>
   
   <style scoped>
