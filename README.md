@@ -4,6 +4,11 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nuxt3/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nuxt3/tree/main)
 
 
+**Code unit test coverage:**
+| Statements                  | Branches                | Functions                 | Lines             |
+| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+| ![Statements](https://img.shields.io/badge/statements-48.1%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-30.35%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-34.48%25-red.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-46.75%25-red.svg?style=flat) |
+
 ## UPPERCASE band webapp
 
 As a matter of interest and passion for JavaScript and music in general, I created a Nuxt3 web application for my band UPPERCASE.
