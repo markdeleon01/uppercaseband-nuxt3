@@ -1,8 +1,21 @@
-# Nuxt Minimal Starter
+# uppercaseband-nuxt3
+
+**CI build:**
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nuxt3/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nuxt3/tree/main)
+
+
+## UPPERCASE band webapp
+
+As a matter of interest and passion for JavaScript and music in general, I created a Nuxt3 web application for my band UPPERCASE.
+
+The live site can be found on: [Render](https://uppercaseband-nuxt3.onrender.com/)
+
+
+## Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### Setup
 
 Make sure to install dependencies:
 
@@ -20,7 +33,7 @@ yarn install
 bun install
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -38,7 +51,7 @@ yarn dev
 bun run dev
 ```
 
-## Production
+### Production
 
 Build the application for production:
 
