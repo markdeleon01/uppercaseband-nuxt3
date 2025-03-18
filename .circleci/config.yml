@@ -25,8 +25,22 @@ jobs:
             - ~/.npm
 
       - run:
+          name: Run generate
+          command: npm run generate
+
+      - run:
+          name: Install xvfb
+          command: |
+            npm run install:xvfb
+
+      - run:
           name: Run tests
           command: npm run test
+
+      - run:
+          name: Front-End e2e Tests
+          command: |
+            npm run test:e2e
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows

@@ -14,8 +14,8 @@
     "test": "vitest --run --passWithNoTests",
     "test:unit": "vitest",
     "coverage": "vitest run --coverage",
-    "test:e2e": "start-server-and-test 'nuxt start' :3000 'cypress run --e2e --record --key 0b12a310-497e-4b6d-8343-e1db3a2352cf'",
-    "test:e2e:dev": "start-server-and-test 'nuxt start' :3000 'cypress open --e2e'"
+    "test:e2e": "npx nuxi build && start-server-and-test 'nuxt start' :3000 'cypress run --e2e --record --key 36c8cc55-fdd7-4b22-8e54-42efe61430a8'",
+    "test:e2e:dev": "npx nuxi build && start-server-and-test 'nuxt start' :3000 'cypress open --e2e'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -31,7 +31,9 @@
     "@nuxt/test-utils": "^3.17.2",
     "@pinia/testing": "^1.0.0",
     "@vue/test-utils": "^2.4.6",
+    "cypress": "^14.2.0",
     "happy-dom": "^17.4.4",
+    "start-server-and-test": "^2.0.11",
     "vitest": "^3.0.9"
   }
 }
