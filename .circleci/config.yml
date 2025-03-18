@@ -38,9 +38,19 @@ jobs:
           command: npm run test
 
       - run:
+          name: Istanbul coverage
+          command: |
+            npm run coverage
+
+      - run:
           name: Front-End e2e Tests
           command: |
             npm run test:e2e
+
+      - run:
+          name: Istanbul coverage badges
+          command: |
+            npm run make-badges:ci
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows

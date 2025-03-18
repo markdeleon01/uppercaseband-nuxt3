@@ -30,9 +30,11 @@
   "devDependencies": {
     "@nuxt/test-utils": "^3.17.2",
     "@pinia/testing": "^1.0.0",
+    "@vitest/coverage-istanbul": "^3.0.9",
     "@vue/test-utils": "^2.4.6",
     "cypress": "^14.2.0",
     "happy-dom": "^17.4.4",
+    "istanbul-badges-readme": "^1.9.0",
     "start-server-and-test": "^2.0.11",
     "vitest": "^3.0.9"
   }

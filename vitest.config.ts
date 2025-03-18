@@ -6,8 +6,9 @@ export default defineVitestConfig({
     globals: true,
     coverage: {
       reporter: ['json-summary', 'html'],
-      provider: 'v8'
+      provider: 'istanbul'
     },
+    exclude: ['coverage/*', 'cypress/*', 'node_modules/*', 'e2e/*'],
     environment: 'nuxt'
   }
 })
